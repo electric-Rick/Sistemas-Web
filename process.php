@@ -26,13 +26,12 @@ margin-left: 2em;
 
 
 <body>
-<header>
-	<h2>O formulário_</h2>
-		</header>
+	<header>
+		<h2>O formulário_</h2>
+	</header>
 <?php
 #Inserir posteriomente o código comentado abaixo
 #include_once("conn.php");
-
 #Capta os valores dos inputs
 $nome = filter_input(INPUT_POST,'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);

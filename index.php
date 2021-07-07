@@ -35,32 +35,32 @@
 		<header class='_header_'>
 	<h2>O formulário</h2>
 		</header>
-	
-		
-			
 			<form class='_form_general' name='sf_01' method='post' action='process.php'>
 				<label>Digite os dado abaixo para consulta:</label><br>
 				<hr>
-				<label><img src='./svgs/file-person.svg' max-width='3.5em' max-height='4em'></label><input type='text'  placeholder='Digite seu nome' id='nome' name='nome' onchange='dados_salvos(this)' oninvalid="this.setCustomValidity('Você precisa digitar um nome válido para este campo.')" oninput="setCustomValidity('')" required><br>
-				<label><img src='./svgs/house.svg' max-width='3.5em' max-height='4em'></label><input type='text'  placeholder='Digite o seu endereço' id='endereco'  name='endereco' onchange='dados_salvos(this)' required oninvalid="this.setCustomValidity('É necessário preencher o endereço para continuar.')" oninput="setCustomValidity('')"><br>
-				<label><img src='./svgs/phone.svg' max-width='3.5em' max-height='4em'></label><input type='text' placeholder='Digite os eu telefone' id='telefone' name='telefone' onchange='dados_salvos(this)' oninvalid="this.setCustomValidity('Preencha um número correto.')" oninput="setCustomValidity('')"><br>
-				<label><img src='./svgs/check-circle.svg' max-width='3.5em' max-height='4em'></label><input type='email'  placeholder='Digite o seu email' id='email' name='email' onchange='dados_salvos(this)' oninvalid="this.setCustomValidity('Você precisa digitar um e-mail válido, por favor.')" oninput="setCustomValidity('')"><br>
+				<label>
+				<img src='./svgs/file-person.svg' max-width='3.5em' max-height='4em'></label><input type='text'  placeholder='Digite seu nome' id='nome' name='nome' onchange='dados_salvos(this)' oninvalid="this.setCustomValidity('Você precisa digitar um nome válido para este campo.')" oninput="setCustomValidity('')" required>
+				<br>
+				<label>
+				<img src='./svgs/house.svg' max-width='3.5em' max-height='4em'></label><input type='text'  placeholder='Digite o seu endereço' id='endereco'  name='endereco' onchange='dados_salvos(this)' required oninvalid="this.setCustomValidity('É necessário preencher o endereço para continuar.')" oninput="setCustomValidity('')">
+				<br>
+				<label>
+				<img src='./svgs/phone.svg' max-width='3.5em' max-height='4em'>
+				</label>
+				<input type='text' placeholder='Digite os eu telefone' id='telefone' name='telefone' onchange='dados_salvos(this)' oninvalid="this.setCustomValidity('Preencha um número correto.')" oninput="setCustomValidity('')">
+				<br>
+				<label>
+				<img src='./svgs/check-circle.svg' max-width='3.5em' max-height='4em'>
+				</label>
+				<input type='email'  placeholder='Digite o seu email' id='email' name='email' onchange='dados_salvos(this)' oninvalid="this.setCustomValidity('Você precisa digitar um e-mail válido, por favor.')" oninput="setCustomValidity('')"><br>
 				<input type='submit' id='btns_00' value='Verificar'>
 				<input type='reset' id='btns_01' value='Limpar' style=''>
-				
-				<?php
-				
-				?><br>			
+				<br>			
 			</form>
 			
 			<section class='results' style='display:none'>
 				<p></p>
-				
 			</section>
-	
-		<footer class='_footer_'>
-			
-		</footer>	
 <script>
 document.getElementById('nome').value, document.getElementById('endereco').value, document.getElementById('email').value, document.getElementById('telefone').value = dados_salvos('nome'), dados_salvos('endereco'), dados_salvos('email'), dados_salvos('telefone');
 
@@ -86,7 +86,7 @@ function alert_user(el){
 			} else {}
 }
 
-alert_user(nome)
+alert_user(nome);
 
 
 
