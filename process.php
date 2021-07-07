@@ -63,7 +63,7 @@ $display_data_user = ["<label><img src='./svgs/file-person.svg' max-width='3.5em
 if(strlen($nome)>3 && strlen($endereco)>3 && strlen($email)>3){ 
 	echo $boas_vindas;
 	
-	for ($i = 0; $i < 5; $i++){
+	for ($i = 0; $i < 4; $i++){
 	echo "$display_data_user[$i]";
 	}
 	#em caso de erro, display erro
