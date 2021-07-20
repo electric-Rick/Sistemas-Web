@@ -56,9 +56,22 @@ $user_aux = [ $nome, $email, $telefone, $endereco ];
 
 <?php
 #Caso o value dos inputs sejam menores que 2, retorne para o índice.
+
 if(strlen($nome) < 2 && strlen($endereco) < 2 && strlen($email) < 2) header ( "Location: index.php");
+
+#Mensagem e boas-vindas
 $boas_vindas = "<p><em><h3>Olá $nome!</h3></em> Seja bem-vindo a sua página. Abaixo estão os seus dados digitados na página anterior:</p><br>";
-$display_data_user = ["<label><img src='./svgs/file-person.svg' max-width='3.5em' max-height='4em'>Nome:</label> $user_aux[0]<br>", "<label><img src='./svgs/house.svg' max-width='3.5em' max-height='4em'>End.:</label> $user_aux[3]<br>","<label><img src='./svgs/phone.svg' max-width='3.5em' max-height='4em'>Tel.:</label> $user_aux[2]<br>","<label><img src='./svgs/check-circle.svg' max-width='3.5em' max-height='4em'>e-mail:</label> $user_aux[1]<br>"];
+
+$display_data_user = 
+
+[
+
+"<label><img src='./svgs/file-person.svg' max-width='3.5em' max-height='4em'>Nome:</label> $user_aux[0]<br>"
+,"<label><img src='./svgs/house.svg' max-width='3.5em' max-height='4em'>End.:</label> $user_aux[3]<br>"
+,"<label><img src='./svgs/phone.svg' max-width='3.5em' max-height='4em'>Tel.:</label> $user_aux[2]<br>"
+,"<label><img src='./svgs/check-circle.svg' max-width='3.5em' max-height='4em'>e-mail:</label> $user_aux[1]<br>"
+
+];
 #Caso o value recebido dos inputs sejam maiores que 3:
 if(strlen($nome)>3 && strlen($endereco)>3 && strlen($email)>3){ 
 	echo $boas_vindas;
