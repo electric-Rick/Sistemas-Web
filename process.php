@@ -1,26 +1,10 @@
 <html>
-<head>
-<meta charset='UTF-8'>
-<title> Wallet - Person</title>
-<style>
-header{
-		color: whitesmoke;	
-		font-size: 1.8em;
-		margin: -1.1em 0 0 0;
-		background-image: linear-gradient(45deg, #366e45,#32593c,#437851);
-		
-		}
-		
-label {
-margin-left: 1em;
-margin-right: 2em;
 
-}
-p{
-margin-left: 2em;
-}
-</style>
+  <head>
 
+    <meta charset='UTF-8'>
+    <title> Wallet - Person</title>
+    <link rel='stylesheet' href='./style/style.css'>
 
 </head>
 
@@ -88,7 +72,7 @@ if(strlen($nome)>3 && strlen($endereco)>3 && strlen($email)>3){
 <button id='finalizar' onclick="close_window();">Finalizar</button>
 <script>
 function close_window() {
-      close();
+      window.close();
   
 }
 </script>

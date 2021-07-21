@@ -1,0 +1,21 @@
+	
+		header{
+
+			color: whitesmoke;	
+			font-size: 1.8em;
+			margin: -1.5em 0 0 0;
+			background-image: linear-gradient(45deg, #366e45,#32593c,#437851);
+		
+		}
+		
+		input {
+
+			margin: 1.5em 0em 0em 1em;
+			width: 25em;
+			box-shadow: 5px 5px silver;
+
+		}
+
+		input#btns_01, #btns_00 {
+			max-width: 7em;
+		}			
