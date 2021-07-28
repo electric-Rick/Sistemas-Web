@@ -4,7 +4,7 @@ gulp.task('connect-sync', function() {
 	connect.server({}, function(){
 	console.log('Conectando ao servidor local...');
 	browserSync({
-	proxy: 'localhost:8080'
+	proxy: 'localhost'
 })
 	console.log('Feito, o Gulp está pronto e utilizando o BROWER-SYNC.');
 });
