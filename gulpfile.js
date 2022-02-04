@@ -6,7 +6,7 @@ gulp.task('connect-sync', function() {
 	browserSync({
 	proxy: 'localhost'
 })
-	console.log('Feito, o Gulp está pronto e utilizando o BROWER-SYNC.');
+	console.log('Feito, o Gulp está pronto e utilizando o BROWSER-SYNC.');
 });
 });
 
