@@ -61,13 +61,16 @@ if(strlen($nome)>3 && strlen($endereco)>3 && strlen($email)>3){
 	echo $boas_vindas;
 	
 	for ($i = 0; $i < 4; $i++){
-	echo "$display_data_user[$i]";
+		echo "$display_data_user[$i]";
 	}
 	#em caso de erro, display erro
-	} else { echo "<p style='background-color: yellow; font-style: bold; font-size: 2em; color: red; max-width: 10em;'> Não foi possível realizar a sua operação.</p><br>";
-	}
-?>
-<hr>
+} else {
+   echo "<p style='background-color: yellow; font-style: bold; font-size: 2em; color: red; max-width: 10em;'> Não foi possível realizar a sua operação.</p><br>";
+}
+
+	?>
+
+	<hr>
 <button id='voltar' onclick="history.back()" style="margin-top: 2em;">Voltar</button>
 <button id='finalizar' onclick="close_window();">Finalizar</button>
 <script>
